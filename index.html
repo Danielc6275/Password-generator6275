@@ -12,7 +12,15 @@
         <h1 id="hero-1">Generate a</h1>
         <h1 id="hero-2">random password</h1>
         <p id="sidekick">Never use an insecure password again</p>
-        <button id="generate-btn" onclick="genPwds()">Generate passwords</button>
+        <button id="generate-btn" class = "btn-layout" onclick="genPwds()">Generate passwords</button>
+      </div>
+      <label for="use-nums-symbols-el-1" id="toggle-label" class="lighter-background">Toggle numbers and symbols on or off</label> 
+      <button id="use-nums-symbols-el-1" class="btn-layout" onclick="toggleOn()">On</button>
+      <button id="use-nums-symbols-el" class="btn-layout" onclick="toggleOff()">Off</button>
+      <div id="pwd-length-container" class="container">
+        <label for="set-pwd-length" class="lighter-background">Set password length</label>
+        <input id="set-pwd-length-el" class="btn-layout input-layout" title="Set password length between 5 and 20 characters" 
+          type="number" min="5" max="20" value="15" />
       </div>
       <div id="line-separator"></div>
       <div class="pwd-container">
